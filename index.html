@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&family=Teko:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/07b12e589f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body onmousemove="moveBackground(event)">
+    <header class="banner">
+      <div class="row banner__row">
+        <nav>
+          <ul class="nav__link--list">
+            <li class="nav__link--item">
+              <a href="#" class="nav__link">Home</a>
+              <div class="nav__link-hover-effect"></div>
+            </li>
+            <li class="nav__link--item">
+              <a href="#" class="nav__link">Browse</a>
+              <div class="nav__link-hover-effect"></div>
+            </li>
+            <li class="nav__link--item">
+              <button class="nav__button">
+                <a href="#" class="nav__link nav__link--primary">Contact</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="search__title">
+          Browse for your <span class="text__orange">Favorite</span> Anime
+        </h1>
+        <form id="search" onsubmit="return false">
+          <input
+            id="anime__name"
+            type="text"
+            placeholder="Search by Name"
+            class="search-bar"
+          />
+          <button
+            type="submit"
+            class="search-button"
+            onclick="renderAnime(document.getElementById('anime__name').value)"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <img src="./assets/One-piece-banner.jpg" alt="" class="header__img" />
+    </header>
+    <section id="anime">
+      <div class="row anime__row">
+        <h2 class="anime__results"></h2>
+        <div class="container anime__container"></div>
+        <div class="loading__para">
+            <p></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer__row">
+        <div class="container footer__container">
+          <a href="#" class="footer__logo--wrapper click">
+            <img src="./assets/My project-1.png" alt="" />
+            <p class="footer__pop-up">
+              Top <i class="fa-solid fa-arrow-up"></i>
+            </p>
+          </a>
+          <ul class="footer__link--list">
+            <li class="footer__list--item">
+              <a
+                href="https://github.com/Molberda"
+                target="_blank"
+                class="footer__link"
+                >Github</a
+              >
+              <div class="footer__link-hover-effect"></div>
+            </li>
+            <li class="footer__list--item">
+              <a
+                href="https://www.linkedin.com/in/ryancacicedo/"
+                target="_blank"
+                class="footer__link"
+                >LinkedIn</a
+              >
+              <div class="footer__link-hover-effect"></div>
+            </li>
+            <li class="footer__list--item">
+              <a
+                href=""
+                class="footer__link"
+                target="_blank"
+                >Resume
+              </a>
+              <div class="footer__link-hover-effect"></div>
+            </li>
+            <li class="footer__list--item">
+              <a
+                href="#"
+                class="footer__link"
+                >Contact
+              </a>
+              <div class="footer__link-hover-effect"></div>
+            </li>
+          </ul>
+          <p class="copyright__text">Copyright © 2022 Ryan Cacicedo</p>
+        </div>
+      </div>
+    </footer>
+    <figure class="shapes shape__wrapper--0">
+      <img src="./assets/konoha.png" alt="" class="shape"/>
+    </figure>
+    <figure class="shapes shape__wrapper--1">
+      <img src="./assets/dragon-ball.png" alt="" class="shape"/>
+    </figure>
+  <figure class="shapes shape__wrapper--2">
+    <img src="./assets/One-piece.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--3">
+    <img src="./assets/One-piece.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--4">
+    <img src="./assets/konoha.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--5">
+    <img src="./assets/dragon-ball.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--6">
+    <img src="./assets/dragon-ball.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--7">
+    <img src="./assets/one-piece.png" alt="" class="shape"/>
+  </figure>
+  <figure class="shapes shape__wrapper--8">
+    <img src="./assets/konoha.png" alt="" class="shape"/>
+  </figure>
+  </body>
+</html>
