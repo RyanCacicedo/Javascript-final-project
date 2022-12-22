@@ -78,5 +78,6 @@ async function getData(title) {
         return animeData
 }
 
+
 // https://api.jikan.moe/v4/anime
 

@@ -148,6 +148,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .search__title {
@@ -360,6 +361,16 @@ form {
   SHAPES
   
   */
+
+  .mask {
+    position: absolute;
+    left: 21vw;
+    width: 180px ;
+    z-index: 0;
+    filter: invert();
+    opacity: 0.9;
+  }
+
 
 .shapes {
   position: fixed;
