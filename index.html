@@ -24,16 +24,24 @@
         <nav>
           <ul class="nav__link--list">
             <li class="nav__link--item">
-              <a href="#" class="nav__link">Home</a>
-              <div class="nav__link-hover-effect"></div>
+                <button class="nav__button">
+                    <a href="#" class="nav__link nav__button">Home</a>
+                    <div class="nav__link-hover-effect"></div>
+                </button>
             </li>
             <li class="nav__link--item">
-              <a href="#" class="nav__link">Browse</a>
+                <button
+                type="submit"
+                class="nav__button"
+                onclick="renderAnime(document.getElementById('anime__name').value)"
+              >
+              <a href="#" class="nav__link--browse">Browse</a>
               <div class="nav__link-hover-effect"></div>
+              </button>
             </li>
             <li class="nav__link--item">
               <button class="nav__button">
-                <a href="#" class="nav__link nav__link--primary">Contact</a>
+                <a href="#" class="nav__link">Contact</a>
               </button>
             </li>
           </ul>
